@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Microservicios</title>
 </head>
 <body>
+    <h1>Taller microservicios</h1>
+    <h2>Registro Docente</h2>
+    <div>
+        <form name="Nombre">
+            <div>
+                <label>Ingrese Docente:</label>
+                <input name="nombre" type="text" required>
+            </div>
+
+    <div>
+        <form name="Codigo">
+                <label>Ingrese Ocupacion:</label>
+                <input name="codigo" type="number" required>
+            </div>
+        </form>
+            
+     <div>
+        <form name="Ocupacion">
+             <div>
+                <label>Ingrese Ocupacion:</label>
+                <input name="Ocupacion" type="text" required>
+            </div>
+                    
+        </form>
+        <button onclick="pruebaClick()">Registrar</button>
+        <table id="tabla">
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/estudiantes.js"></script>
 </body>
 </html>
