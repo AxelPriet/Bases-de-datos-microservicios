@@ -3,42 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Microservicios</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
     <h1>Taller microservicios</h1>
     <h2>Registro Docente</h2>
     <div>
-        <form name="Nombre">
+        <form id="docenteForm">
             <div>
                 <label>Ingrese Docente:</label>
-                <input name="nombre" type="text" required>
+                <input id="nombreDocente" type="text" required>
             </div>
-
-    <div>
-        <form name="Codigo">
+            <div>
+                <label>Ingrese Codigo :</label>
+                <input id="codigoDocente" type="number" required>
+            </div>
+            <div>
                 <label>Ingrese Ocupacion:</label>
-                <input name="codigo" type="number" required>
+                <input id="ocupacionDocente" type="text" required>
             </div>
+            <button type="submit">Registrar</button>
         </form>
-            
-     <div>
-        <form name="Ocupacion">
-             <div>
-                <label>Ingrese Ocupacion:</label>
-                <input name="Ocupacion" type="text" required>
-            </div>
-                    
-        </form>
-        <button onclick="pruebaClick()">Registrar</button>
-        <table id="tabla">
-            <tbody>
-                
-            </tbody>
-        </table>
     </div>
-
-    
+    <h2>Registro Curso</h2>
+    <div>
+        <form id="cursoForm">
+            <div>
+                <label>Ingrese Curso:</label>
+                <input id="nombreCurso" type="text" required>
+            </div>
+            <div>
+                <label>Ingrese Codigo :</label>
+                <input id="codigoCurso" type="number" required>
+            </div>
+            <div>
+                <label>Ingrese Codigo Docente:</label>
+                <input id="codigoDocenteCurso" type="number" required>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/estudiantes.js"></script>
+    <script src="js/docentes.js"></script>
 </body>
 </html>
